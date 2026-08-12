@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    min-height: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Palanquin Dark-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Palanquin Dark-Regular";
+    src: local("Palanquin Dark-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Palanquin-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Palanquin-SemiBold";
+    src: local("Palanquin-SemiBold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Palanquin-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Palanquin-Regular";
+    src: local("Palanquin-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Palanquin-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Palanquin-Medium";
+    src: local("Palanquin-Medium");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Open Sans-ExtraBold", "weight": "800", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Open Sans-ExtraBold";
+    src: local("Open Sans-ExtraBold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Open Sans-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Open Sans-SemiBold";
+    src: local("Open Sans-SemiBold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Castoro-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Castoro-Regular";
+    src: local("Castoro-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Palanquin-Thin", "weight": "100", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Palanquin-Thin";
+    src: local("Palanquin-Thin");
+}
