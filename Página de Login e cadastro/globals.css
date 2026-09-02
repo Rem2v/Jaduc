@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Palanquin:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-page: #f8ede5;
+    --primary-blue: #003d5c;
+    --primary-dark: #016180;
+    --accent-blue: #4a8cb0;
+    --input-bg: #f8ede5;
+    --text-muted: #d0b9a9;
+    --white: #ffffff;
+    
+    --radius-card: 32px;
+    --radius-input: 20px;
+    --radius-btn: 20px;
+
+    --font-title: 'Open Sans', sans-serif;
+    --font-serif: 'Castoro', serif;
+    --font-body: 'Palanquin', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
