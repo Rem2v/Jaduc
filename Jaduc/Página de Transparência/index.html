@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JADUC | Portal de Transparência</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER NAVIGATION -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="33.5" cy="33.5" r="33.5" fill="#4C2C17"/>
+                        <!-- Martelo simplificado -->
+                        <rect x="20" y="30" width="27" height="4" rx="2" fill="#F8EDE5"/>
+                        <rect x="32" y="20" width="4" height="27" rx="2" fill="#F8EDE5"/>
+                        <circle cx="34" cy="22" r="3" fill="#F8EDE5"/>
+                    </svg>
+                </div>
+                <h1 class="logo-text">JADUC</h1>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Ícone comunidade baseado no Figma -->
+                            <path d="M22 2L12 12v20c0 3 2 5 5 5h10c3 0 5-2 5-5V12L22 2z" fill="#8C5C47"/>
+                            <circle cx="22" cy="18" r="4" fill="#F8EDE5"/>
+                            <path d="M15 28c0-4 3-7 7-7s7 3 7 7" fill="#F8EDE5"/>
+                        </svg>
+                    </div>
+                    <span class="nav-text">Comunidade</span>
+                </div>
+
+                <div class="nav-item active">
+                    <div class="nav-icon transparency-icon">
+                        <svg viewBox="0 0 52 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Ícone transparência baseado no Figma -->
+                            <rect x="8" y="12" width="36" height="24" rx="3" fill="#016180"/>
+                            <circle cx="26" cy="8" r="6" fill="#016180"/>
+                            <rect x="18" y="32" width="16" height="12" rx="2" fill="#016180"/>
+                            <!-- Detalhes -->
+                            <rect x="12" y="18" width="8" height="2" rx="1" fill="#F8EDE5"/>
+                            <rect x="12" y="22" width="12" height="2" rx="1" fill="#F8EDE5"/>
+                            <rect x="12" y="26" width="6" height="2" rx="1" fill="#F8EDE5"/>
+                        </svg>
+                        <div class="transparency-detail">
+                            <svg viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4.5" cy="4.5" r="4.5" fill="#9ECDC9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="nav-text active-text">Transparência</span>
+                    <div class="nav-underline"></div>
+                </div>
+
+                <div class="nav-item">
+                    <div class="nav-icon">
+                        <svg viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Ícone notícias -->
+                            <rect x="6" y="8" width="32" height="24" rx="2" fill="#8C5C47"/>
+                            <rect x="10" y="12" width="24" height="2" rx="1" fill="#F8EDE5"/>
+                            <rect x="10" y="16" width="20" height="2" rx="1" fill="#F8EDE5"/>
+                            <rect x="10" y="20" width="16" height="2" rx="1" fill="#F8EDE5"/>
+                            <rect x="10" y="24" width="18" height="2" rx="1" fill="#F8EDE5"/>
+                        </svg>
+                    </div>
+                    <span class="nav-text">Notícias</span>
+                </div>
+            </nav>
+
+            <!-- User Profile Section -->
+            <div class="user-section">
+                <div class="user-location">Pimentas, Guarul...</div>
+                <div class="user-info">
+                    <span class="user-name">Usuario</span>
+                    <div class="user-avatar">
+                        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="36" cy="36" r="36" fill="#4C2C17"/>
+                            <circle cx="36" cy="28" r="12" fill="#F8EDE5"/>
+                            <path d="M16 60c0-11 9-20 20-20s20 9 20 20" fill="#F8EDE5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu-toggle">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- SECTION 1: BUDGET OVERVIEW (Full Viewport) -->
+        <section class="budget-section">
+            <div class="budget-container">
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <h2 class="portal-title">Portal de Transparência</h2>
+                    <h1 class="main-title">Orçamento Destinado</h1>
+                    <p class="subtitle">
+                        Entenda de forma simples como dinheiro publico é investido em 
+                        <strong>Pimentas, Guarulhos - SP</strong>
+                    </p>
+                </div>
+
+                <!-- Budget Cards -->
+                <div class="budget-cards">
+                    <!-- Orçamento Destinado Card -->
+                    <div class="budget-card primary-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone de dinheiro baseado no Figma -->
+                                <path d="M4 6h38c2 0 4 2 4 4v10c0 2-2 4-4 4H4c-2 0-4-2-4-4V10c0-2 2-4 4-4z" fill="#F8EDE5"/>
+                                <circle cx="23" cy="15" r="8" fill="none" stroke="#4A8CB0" stroke-width="2"/>
+                                <path d="M20 12h6v6h-6z" fill="#4A8CB0"/>
+                                <path d="M21 13h4M21 15h4M21 17h2" stroke="#F8EDE5" stroke-width="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Orçamento Destinado</h3>
+                            <div class="card-value">R$ 15 MI</div>
+                            <p class="card-subtitle">Para pimentas</p>
+                        </div>
+                    </div>
+
+                    <!-- Projetos Ativos Card -->
+                    <div class="budget-card secondary-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone de projetos baseado no Figma -->
+                                <rect x="8" y="12" width="44" height="36" rx="4" fill="#8C5C47"/>
+                                <rect x="12" y="16" width="36" height="4" rx="2" fill="#F8EDE5"/>
+                                <rect x="12" y="24" width="28" height="3" rx="1.5" fill="#F8EDE5"/>
+                                <rect x="12" y="30" width="32" height="3" rx="1.5" fill="#F8EDE5"/>
+                                <rect x="12" y="36" width="24" height="3" rx="1.5" fill="#F8EDE5"/>
+                                <circle cx="45" cy="15" r="8" fill="#4A8CB0"/>
+                                <path d="M42 15h6M45 12v6" stroke="#F8EDE5" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Projetos Ativos</h3>
+                            <div class="card-value secondary-value">8</div>
+                            <p class="card-subtitle">Atualmente em andamento</p>
+                        </div>
+                    </div>
+
+                    <!-- Obras Atrasadas Card -->
+                    <div class="budget-card secondary-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Ícone de obras atrasadas -->
+                                <rect x="8" y="20" width="44" height="28" rx="4" fill="#8C5C47"/>
+                                <rect x="12" y="24" width="36" height="3" rx="1.5" fill="#F8EDE5"/>
+                                <rect x="12" y="30" width="28" height="3" rx="1.5" fill="#F8EDE5"/>
+                                <rect x="12" y="36" width="32" height="3" rx="1.5" fill="#F8EDE5"/>
+                                <circle cx="45" cy="15" r="10" fill="#DC3545"/>
+                                <path d="M42 12l6 6M48 12l-6 6" stroke="#F8EDE5" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Obras Atrasadas</h3>
+                            <div class="card-value secondary-value">1</div>
+                            <p class="card-subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DETAILED STATISTICS (Scrollable) -->
+        <section class="statistics-section">
+            <div class="statistics-container">
+                <!-- Budget Distribution -->
+                <div class="distribution-section">
+                    <h2 class="section-title">Como o dinheiro é divido?</h2>
+                    
+                    <div class="distribution-content">
+                        <!-- Pie Chart -->
+                        <div class="chart-container">
+                            <div class="pie-chart">
+                                <svg viewBox="0 0 200 200" class="chart-svg">
+                                    <!-- Saúde 35% - Azul escuro -->
+                                    <path d="M 100,100 L 100,20 A 80,80 0 0,1 171.31,64.72 Z" fill="#8C5C47" class="chart-segment" data-category="saude"></path>
+                                    <!-- Educação 25% - Azul médio -->
+                                    <path d="M 100,100 L 171.31,64.72 A 80,80 0 0,1 164.72,135.28 Z" fill="#003D5C" class="chart-segment" data-category="educacao"></path>
+                                    <!-- Infraestrutura 20% - Azul claro -->
+                                    <path d="M 100,100 L 164.72,135.28 A 80,80 0 0,1 128.68,179.28 Z" fill="#016180" class="chart-segment" data-category="infraestrutura"></path>
+                                    <!-- Segurança 10% - Marrom -->
+                                    <path d="M 100,100 L 128.68,179.28 A 80,80 0 0,1 71.32,179.28 Z" fill="#8C5C47" class="chart-segment" data-category="seguranca"></path>
+                                    <!-- Outros 10% - Verde claro -->
+                                    <path d="M 100,100 L 71.32,179.28 A 80,80 0 0,1 100,20 Z" fill="#9ECDC9" class="chart-segment" data-category="outros"></path>
+                                </svg>
+                            </div>
+                            
+                            <!-- Chart Legend -->
+                            <div class="chart-legend">
+                                <div class="legend-row">
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #003D5C;"></div>
+                                        <span class="legend-text">Educação</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #016180;"></div>
+                                        <span class="legend-text">Infraestrutura</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #9ECDC9;"></div>
+                                        <span class="legend-text">Outros</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #8C5C47;"></div>
+                                        <span class="legend-text">Saúde</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color" style="background-color: #8C5C47;"></div>
+                                        <span class="legend-text">Segurança</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Budget Breakdown -->
+                        <div class="breakdown-list">
+                            <div class="breakdown-item">
+                                <div class="breakdown-indicator" style="background-color: #003D5C;"></div>
+                                <div class="breakdown-content">
+                                    <h4 class="breakdown-title">Saúde (35%)</h4>
+                                    <p class="breakdown-description">Merenda escolar e reforma de creches.</p>
+                                </div>
+                            </div>
+
+                            <div class="breakdown-item">
+                                <div class="breakdown-indicator" style="background-color: #016180;"></div>
+                                <div class="breakdown-content">
+                                    <h4 class="breakdown-title">Educação (25%)</h4>
+                                    <p class="breakdown-description">Merenda escolar e reforma de creches.</p>
+                                </div>
+                            </div>
+
+                            <div class="breakdown-item">
+                                <div class="breakdown-indicator" style="background-color: #4A8CB0;"></div>
+                                <div class="breakdown-content">
+                                    <h4 class="breakdown-title">Infraestrutura (20%)</h4>
+                                    <p class="breakdown-description">Asfalto, iluminação pública e saneamento.</p>
+                                </div>
+                            </div>
+
+                            <div class="breakdown-item">
+                                <div class="breakdown-indicator" style="background-color: #8C5C47;"></div>
+                                <div class="breakdown-content">
+                                    <h4 class="breakdown-title">Segurança (10%)</h4>
+                                    <p class="breakdown-description">Policiamento e câmeras nas ruas.</p>
+                                </div>
+                            </div>
+
+                            <div class="breakdown-item">
+                                <div class="breakdown-indicator" style="background-color: #9ECDC9;"></div>
+                                <div class="breakdown-content">
+                                    <h4 class="breakdown-title">Outros (10%)</h4>
+                                    <p class="breakdown-description">Cultura, esporte e lazer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Projects -->
+                <div class="projects-section">
+                    <h2 class="section-title">Projetos em Destaque na Região</h2>
+                    
+                    <div class="projects-list">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-title">Reforma do Hospital Municipal Pimetas</h3>
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%; background-color: #9ECDC9;"></div>
+                                    </div>
+                                    <span class="progress-text">65% Concluído</span>
+                                </div>
+                            </div>
+                            <div class="project-status status-progress">
+                                <span class="status-text">Em andamento</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-title">Construção da Escola Nova Vida</h3>
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 30%; background-color: #F8EDE5;"></div>
+                                    </div>
+                                    <span class="progress-text">30% Concluído</span>
+                                </div>
+                            </div>
+                            <div class="project-status status-delayed">
+                                <span class="status-text">Atrasado</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-title">Construção da Escola Nova Vida</h3>
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%; background-color: #003D5C;"></div>
+                                    </div>
+                                    <span class="progress-text">100% Concluído</span>
+                                </div>
+                            </div>
+                            <div class="project-status status-completed">
+                                <span class="status-text">Concluído</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content can be added here if needed -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

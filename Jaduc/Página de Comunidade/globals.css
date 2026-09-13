@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Palanquin:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-page: #f8ede5;
+    --primary-blue: #003d5c;
+    --primary-dark: #016180;
+    --accent-blue: #4a8cb0;
+    --input-bg: #f8ede5;
+    --text-muted: #d0b9a9;
+    --white: #ffffff;
+    --brown-dark: #4c2c17;
+    --brown-medium: #8c5c47;
+    --teal-light: #9ecdc9;
+    
+    --radius-card: 32px;
+    --radius-input: 20px;
+    --radius-btn: 20px;
+
+    --font-title: 'Open Sans', sans-serif;
+    --font-serif: 'Castoro', serif;
+    --font-body: 'Palanquin', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--brown-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+input, textarea {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+svg {
+    display: block;
+}
+
+/* Utility Classes */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
