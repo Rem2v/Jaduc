@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de Transparência JADUC - Acompanhe como o dinheiro público é investido em Pimentas, Guarulhos - SP">
+    <title>JADUC | Portal de Transparência</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER / NAVEGAÇÃO PRINCIPAL
+    ========================================== -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo JADUC -->
+            <div class="header-logo">
+                <img src="../img/icon_page.svg" alt="Logo JADUC" class="logo-icon">
+                <span class="logo-text">JADUC</span>
+            </div>
+
+            <!-- Navegação Principal -->
+            <nav class="main-nav" aria-label="Navegação principal">
+                <button class="nav-item" aria-label="Comunidade">
+                    <img src="../img/comunidade_page.svg" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Comunidade</span>
+                </button>
+
+                <button class="nav-item nav-item--active" aria-label="Transparência" aria-current="page">
+                    <img src="../img/trans_page.svg" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Transparência</span>
+                </button>
+
+                <button class="nav-item" aria-label="Notícias">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M7 7H17M7 11H17M7 15H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Notícias</span>
+                </button>
+            </nav>
+
+            <!-- Informações do Usuário -->
+            <div class="header-user">
+                <div class="user-location">
+                    <span class="location-text">Pimentas, Guarul...</span>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">Usuario</span>
+                    <div class="user-avatar">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="8" r="4" fill="currentColor"/>
+                            <path d="M6 21C6 17.134 8.686 14 12 14C15.314 14 18 17.134 18 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <button class="menu-toggle" aria-label="Menu hambúrguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    ========================================== -->
+    <main class="transparency-page">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <p class="hero-subtitle">Portal de Transparência</p>
+            <h1 class="hero-title">Orçamento Destinado</h1>
+            <p class="hero-description">
+                Entenda de forma simples como dinheiro público é investido em 
+                <strong>Pimentas, Guarulhos - SP</strong>
+            </p>
+        </section>
+
+        <!-- Cards de Estatísticas -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                
+                <!-- Card 1: Orçamento Destinado -->
+                <article class="stat-card stat-card--primary">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 7L11 17M17 9L15 15M9 9L7 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-label">Orçamento<br>Destinado</h3>
+                        <p class="stat-value">R$ 15 MI</p>
+                        <p class="stat-sublabel">Para pimentas</p>
+                    </div>
+                </article>
+
+                <!-- Card 2: Projetos Ativos -->
+                <article class="stat-card">
+                    <div class="stat-icon stat-icon--secondary">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-label">Projetos<br>Ativos</h3>
+                        <p class="stat-value stat-value--secondary">8</p>
+                        <p class="stat-sublabel stat-sublabel--secondary">Atualmente em andamento</p>
+                    </div>
+                </article>
+
+                <!-- Card 3: Obras Atrasadas -->
+                <article class="stat-card">
+                    <div class="stat-icon stat-icon--secondary">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-label">Obras<br>Atrasadas</h3>
+                        <p class="stat-value stat-value--secondary">1</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Seção: Como o dinheiro é divido? -->
+        <section class="budget-section">
+            <div class="budget-container">
+                
+                <!-- Coluna Esquerda: Gráfico -->
+                <div class="budget-chart-wrapper">
+                    <h2 class="section-title">Como o dinheiro é divido?</h2>
+                    
+                    <div class="donut-chart-container">
+                        <svg class="donut-chart" viewBox="0 0 200 200" aria-label="Gráfico de distribuição do orçamento">
+                            <!-- Círculo de fundo -->
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#f0f0f0" stroke-width="40"/>
+                            
+                            <!-- Segmentos do gráfico (serão animados via JS) -->
+                            <circle class="chart-segment chart-segment--health" cx="100" cy="100" r="80" 
+                                    fill="none" stroke="var(--chart-health)" stroke-width="40"
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0"
+                                    transform="rotate(-90 100 100)" data-percentage="35"/>
+                            
+                            <circle class="chart-segment chart-segment--education" cx="100" cy="100" r="80" 
+                                    fill="none" stroke="var(--chart-education)" stroke-width="40"
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0"
+                                    transform="rotate(-90 100 100)" data-percentage="25"/>
+                            
+                            <circle class="chart-segment chart-segment--infrastructure" cx="100" cy="100" r="80" 
+                                    fill="none" stroke="var(--chart-infrastructure)" stroke-width="40"
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0"
+                                    transform="rotate(-90 100 100)" data-percentage="20"/>
+                            
+                            <circle class="chart-segment chart-segment--security" cx="100" cy="100" r="80" 
+                                    fill="none" stroke="var(--chart-security)" stroke-width="40"
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0"
+                                    transform="rotate(-90 100 100)" data-percentage="10"/>
+                            
+                            <circle class="chart-segment chart-segment--others" cx="100" cy="100" r="80" 
+                                    fill="none" stroke="var(--chart-others)" stroke-width="40"
+                                    stroke-dasharray="0 502.65" stroke-dashoffset="0"
+                                    transform="rotate(-90 100 100)" data-percentage="10"/>
+                        </svg>
+                        
+                        <!-- Legenda do Gráfico -->
+                        <div class="chart-legend">
+                            <button class="legend-item" data-category="health">
+                                <span class="legend-dot" style="background-color: var(--chart-health);"></span>
+                                <span class="legend-label">Saúde</span>
+                            </button>
+                            <button class="legend-item" data-category="education">
+                                <span class="legend-dot" style="background-color: var(--chart-education);"></span>
+                                <span class="legend-label">Educação</span>
+                            </button>
+                            <button class="legend-item" data-category="infrastructure">
+                                <span class="legend-dot" style="background-color: var(--chart-infrastructure);"></span>
+                                <span class="legend-label">Infraestrutura</span>
+                            </button>
+                            <button class="legend-item" data-category="security">
+                                <span class="legend-dot" style="background-color: var(--chart-security);"></span>
+                                <span class="legend-label">Segurança</span>
+                            </button>
+                            <button class="legend-item" data-category="others">
+                                <span class="legend-dot" style="background-color: var(--chart-others);"></span>
+                                <span class="legend-label">Outros</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Lista Detalhada de Categorias -->
+                    <div class="budget-details">
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-dot" style="background-color: var(--chart-health);"></span>
+                                <h3 class="budget-item-title">Saúde (35%)</h3>
+                            </div>
+                            <p class="budget-item-description">Merenda escolar e reforma de creches.</p>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-dot" style="background-color: var(--chart-education);"></span>
+                                <h3 class="budget-item-title">Educação (25%)</h3>
+                            </div>
+                            <p class="budget-item-description">Merenda escolar e reforma de creches.</p>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-dot" style="background-color: var(--chart-infrastructure);"></span>
+                                <h3 class="budget-item-title">Infraestrutura (20%)</h3>
+                            </div>
+                            <p class="budget-item-description">Asfalto, iluminação pública e saneamento.</p>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-dot" style="background-color: var(--chart-security);"></span>
+                                <h3 class="budget-item-title">Segurança (10%)</h3>
+                            </div>
+                            <p class="budget-item-description">Policiamento e câmeras nas ruas.</p>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <span class="budget-dot" style="background-color: var(--chart-others);"></span>
+                                <h3 class="budget-item-title">Outros (10%)</h3>
+                            </div>
+                            <p class="budget-item-description">Cultura, esporte e lazer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Projetos em Destaque -->
+                <div class="projects-wrapper">
+                    <h2 class="section-title">Projetos em Destaque na Região</h2>
+                    
+                    <div class="projects-list">
+                        
+                        <!-- Projeto 1 -->
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title">Reforma do Hospital Municipal Pimetas</h3>
+                                <span class="project-badge project-badge--progress">Em andamento</span>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-fill--progress" data-progress="65"></div>
+                                </div>
+                                <span class="progress-label">65% Concluído</span>
+                            </div>
+                        </article>
+
+                        <!-- Projeto 2 -->
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title">Construção da Escola Nova Vida</h3>
+                                <span class="project-badge project-badge--delayed">Atrasado</span>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-fill--delayed" data-progress="30"></div>
+                                </div>
+                                <span class="progress-label">30% Concluído</span>
+                            </div>
+                        </article>
+
+                        <!-- Projeto 3 -->
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3 class="project-title">Construção da Escola Nova Vida</h3>
+                                <span class="project-badge project-badge--completed">Concluído</span>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill progress-fill--completed" data-progress="100"></div>
+                                </div>
+                                <span class="progress-label">100% Concluído</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 JADUC - Portal de Transparência</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE INTERATIVIDADE -->
+    <script src="script.js"></script>
+</body>
+
+</html>
