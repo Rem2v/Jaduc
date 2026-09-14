@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunidade JADUC - Conecte-se com seus vizinhos em Pimentas, Guarulhos - SP">
+    <title>JADUC | Comunidade</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER / NAVEGAÇÃO PRINCIPAL
+    ========================================== -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo JADUC -->
+            <a href="../Página de Comunidade/index.html" class="header-logo">
+                <img src="../img/icon_page.svg" alt="Logo JADUC" class="logo-icon">
+                <span class="logo-text">JADUC</span>
+            </a>
+
+            <!-- Navegação Principal -->
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="../Página de Comunidade/index.html" class="nav-item nav-item--active" aria-current="page">
+                    <img src="../img/comunidade_page.svg" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Comunidade</span>
+                </a>
+
+                <a href="../Página de Transparência/index.html" class="nav-item">
+                    <img src="../img/trans_page.svg" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Transparência</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M7 7H17M7 11H17M7 15H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Notícias</span>
+                </a>
+            </nav>
+
+            <!-- Informações do Usuário -->
+            <div class="header-user">
+                <div class="user-location">
+                    <span class="location-text" id="user-location">Pimentas, Guarul...</span>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name" id="user-name">Usuario</span>
+                    <button class="user-avatar" id="user-avatar-btn" aria-label="Menu do usuário">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="8" r="4" fill="currentColor"/>
+                            <path d="M6 21C6 17.134 8.686 14 12 14C15.314 14 18 17.134 18 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="menu-toggle" aria-label="Menu hambúrguer" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Menu Dropdown do Usuário -->
+            <div class="user-menu" id="user-menu">
+                <button class="user-menu-item" id="logout-btn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M16 17L21 12M21 12L16 7M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Sair
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    ========================================== -->
+    <main class="community-page">
+
+        <!-- Hero/Subtitle Section -->
+        <section class="hero-section">
+            <p class="hero-text">
+                Conecte-se com seus vizinhos em <strong id="hero-location">Pimentas, Guarulhos - SP</strong>
+            </p>
+        </section>
+
+        <!-- Filtros de Categoria -->
+        <section class="filters-section">
+            <button class="filter-btn filter-btn--active" data-filter="all">
+                Todas as ações
+            </button>
+            <button class="filter-btn" data-filter="bairro">
+                Meu Bairro
+            </button>
+            <button class="filter-btn" data-filter="voluntariado">
+                Voluntariados
+            </button>
+            <button class="filter-btn" data-filter="debate">
+                Debates
+            </button>
+        </section>
+
+        <!-- Feed de Posts -->
+        <section class="feed-section" id="feed-container">
+            
+            <!-- Post 1 -->
+            <article class="post-card" data-category="voluntariado">
+                <div class="post-header">
+                    <div class="post-user-info">
+                        <div class="user-avatar-post">
+                            <span>U</span>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="post-username">Usuario</h3>
+                            <div class="post-meta">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span class="post-location">Bairro, Cidade - Estado</span>
+                                <span class="post-separator">•</span>
+                                <span class="post-timestamp" data-time="2026-09-14T22:00:00">0 segundos atrás</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-badge">
+                        <span>voluntariado</span>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <h4 class="post-title">Ação, Atitude, Assunto</h4>
+                    <div class="post-text">
+                        <p class="post-preview">
+                            Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto...
+                        </p>
+                        <p class="post-full" style="display: none;">
+                            Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto, Ação, Atitude, Assunto. Este é um exemplo de post completo da comunidade JADUC onde os moradores podem compartilhar informações, organizar eventos e discutir assuntos importantes para o bairro.
+                        </p>
+                    </div>
+                    <button class="read-more-btn">Leia mais</button>
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-interactions">
+                        <button class="interaction-btn like-btn" aria-label="Curtir">
+                            <svg class="like-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 22V11M2 13V20C2 21.1046 2.89543 22 4 22H17.4262C18.907 22 20.1662 20.9197 20.3914 19.4562L21.4683 12.4562C21.7479 10.6389 20.3418 9 18.5032 9H15C14.4477 9 14 8.55228 14 8V4.46584C14 3.10399 12.896 2 11.5342 2C11.2093 2 10.915 2.1913 10.7831 2.48812L7.26394 10.4061C7.10344 10.7673 6.74532 11 6.35013 11H4C2.89543 11 2 11.8954 2 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="interaction-btn comment-btn" aria-label="Comentar">
+                            <svg class="comment-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="comment-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post-card" data-category="debate">
+                <div class="post-header">
+                    <div class="post-user-info">
+                        <div class="user-avatar-post">
+                            <span>U</span>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="post-username">Usuario</h3>
+                            <div class="post-meta">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span class="post-location">Bairro, Cidade - Estado</span>
+                                <span class="post-separator">•</span>
+                                <span class="post-timestamp" data-time="2026-09-14T21:55:00">0 segundos atrás</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-badge">
+                        <span>Debate</span>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <h4 class="post-title">Ação, Atitude, Assunto</h4>
+                    <div class="post-text">
+                        <p class="post-preview">
+                            Ação, Atitude, Assunto.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-interactions">
+                        <button class="interaction-btn like-btn" aria-label="Curtir">
+                            <svg class="like-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 22V11M2 13V20C2 21.1046 2.89543 22 4 22H17.4262C18.907 22 20.1662 20.9197 20.3914 19.4562L21.4683 12.4562C21.7479 10.6389 20.3418 9 18.5032 9H15C14.4477 9 14 8.55228 14 8V4.46584C14 3.10399 12.896 2 11.5342 2C11.2093 2 10.915 2.1913 10.7831 2.48812L7.26394 10.4061C7.10344 10.7673 6.74532 11 6.35013 11H4C2.89543 11 2 11.8954 2 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="interaction-btn comment-btn" aria-label="Comentar">
+                            <svg class="comment-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="comment-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Coletividade <span class="footer-dot">•</span> Transparência <span class="footer-dot">•</span> Educação</p>
+            </div>
+            <div class="footer-right">
+                <p><span class="copyright-symbol">©</span> 2026 Portal Jaduc - Direitos Protegidos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE INTERATIVIDADE E AUTENTICAÇÃO -->
+    <script src="script.js"></script>
+</body>
+
+</html>
