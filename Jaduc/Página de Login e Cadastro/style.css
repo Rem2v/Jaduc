@@ -359,6 +359,27 @@
     background-color: #fcf5f0;
 }
 
+/* MENSAGEM DE ERRO */
+.error-message {
+    background-color: #ff4444;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+}
+
 /* CHECKBOX CUSTOMIZADO */
 .remember-row {
     margin: 2px 0;
