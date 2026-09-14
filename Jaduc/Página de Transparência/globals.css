@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Palanquin:wght@300;400;500;600;700&family=Palanquin+Dark:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Cores Principais */
+    --bg-page: #f8ede5;
+    --primary-blue: #003d5c;
+    --primary-dark: #016180;
+    --accent-blue: #4a8cb0;
+    --teal-light: #9ecdc9;
+    
+    /* Cores Secundárias */
+    --brown-dark: #4c2c17;
+    --brown-medium: #8c5c47;
+    --white: #ffffff;
+    --input-bg: #f8ede5;
+    --text-muted: #d0b9a9;
+    
+    /* Cores para Gráfico */
+    --chart-health: #003d5c;      /* Saúde - Azul escuro */
+    --chart-education: #016180;   /* Educação - Azul médio */
+    --chart-infrastructure: #4a8cb0; /* Infraestrutura - Azul claro */
+    --chart-security: #8c5c47;    /* Segurança - Marrom */
+    --chart-others: #9ecdc9;      /* Outros - Verde-azulado */
+    
+    /* Raios de Borda */
+    --radius-card: 30px;
+    --radius-input: 20px;
+    --radius-btn: 20px;
+    --radius-small: 15px;
+    
+    /* Tipografia */
+    --font-title: 'Open Sans', sans-serif;
+    --font-serif: 'Castoro', serif;
+    --font-body: 'Palanquin', sans-serif;
+    --font-dark: 'Palanquin Dark', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --shadow-header: 0 4px 4px rgba(0, 0, 0, 0.25);
+    
+    /* Transições */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Espaçamentos */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: var(--font-body);
+    color: var(--brown-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Utilitários */
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Animações Globais */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scrollbar Customizada */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-blue);
+    border-radius: 6px;
+    border: 3px solid var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* Focus Styles para Acessibilidade */
+*:focus-visible {
+    outline: 3px solid var(--accent-blue);
+    outline-offset: 2px;
+}
